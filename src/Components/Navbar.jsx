@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   <nav className="mb-20 flex items-center justify-between py-6 px-6 text-white">
+    <nav className="mb-20 flex items-center justify-between py-6 px-6 text-white relative">
 
       {/* Logo */}
       <div className="flex items-center">
@@ -15,13 +15,12 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Menu (Mobile) */}
-      <div className="md:hidden">
-
-        <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
+      <div className="md:hidden z-50">
+        <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none relative z-50">
           <div className="space-y-1">
-            <span className={`block h-1 w-6 bg-white transition ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
+            <span className={`block h-1 w-6 bg-white transition ${isOpen ? "rotate-45 translate-y-2 bg-black" : ""}`}></span>
             <span className={`block h-1 w-6 bg-white transition ${isOpen ? "opacity-0" : ""}`}></span>
-            <span className={`block h-1 w-6 bg-white transition ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+            <span className={`block h-1 w-6 bg-white transition ${isOpen ? "-rotate-45 -translate-y-2 bg-black" : ""}`}></span>
           </div>
         </button>
       </div>
@@ -40,20 +39,20 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-  <div className="fixed top-0 left-0 w-full h-screen backdrop-blur-lg flex flex-col items-center justify-center space-y-6 md:hidden z-40">
-    <a href="https://www.linkedin.com/in/prnshjh/" className="hover:text-blue-400 text-4xl"><FaLinkedin /></a>
-    <a href="https://github.com/prnshjh" className="hover:text-gray-600 text-4xl"><FaGithub /></a>
-    <a href="https://priyanshuwrites.medium.com/" className="hover:text-green-400 text-4xl"><FaMedium /></a>
-    <a href="https://leetcode.com/u/prnshjh/" className="hover:text-yellow-400 text-4xl"><SiLeetcode /></a>
-    <a href="https://www.geeksforgeeks.org/user/prnshjh/" className="hover:text-green-600 text-4xl"><SiGeeksforgeeks /></a>
-    <a href="https://codeforces.com/profile/prnshjh" className="hover:text-blue-500 text-4xl"><SiCodeforces /></a>
-    <a href="https://www.codechef.com/users/prnshjh" className="hover:text-orange-400 text-4xl"><SiCodechef /></a>
-    <a href="https://www.instagram.com/priyanshujha.19/" className="hover:text-pink-500 text-4xl"><FaInstagram /></a>
-  </div>
-)}
-
-
-
+        <div className="fixed top-0 left-0 w-full h-screen backdrop-blur-lg flex flex-col items-center justify-center space-y-6 md:hidden z-40">
+          {/* Close button inside the menu */}
+         
+          
+          <a href="https://www.linkedin.com/in/prnshjh/" className="hover:text-blue-400 text-4xl"><FaLinkedin /></a>
+          <a href="https://github.com/prnshjh" className="hover:text-gray-600 text-4xl"><FaGithub /></a>
+          <a href="https://priyanshuwrites.medium.com/" className="hover:text-green-400 text-4xl"><FaMedium /></a>
+          <a href="https://leetcode.com/u/prnshjh/" className="hover:text-yellow-400 text-4xl"><SiLeetcode /></a>
+          <a href="https://www.geeksforgeeks.org/user/prnshjh/" className="hover:text-green-600 text-4xl"><SiGeeksforgeeks /></a>
+          <a href="https://codeforces.com/profile/prnshjh" className="hover:text-blue-500 text-4xl"><SiCodeforces /></a>
+          <a href="https://www.codechef.com/users/prnshjh" className="hover:text-orange-400 text-4xl"><SiCodechef /></a>
+          <a href="https://www.instagram.com/priyanshujha.19/" className="hover:text-pink-500 text-4xl"><FaInstagram /></a>
+        </div>
+      )}
     </nav>
   );
 };
