@@ -15,7 +15,8 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Menu (Mobile) */}
-      <div className="md:hidden">
+      <div className="md:hidden fixed top-6 right-6 z-50">
+
         <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
           <div className="space-y-1">
             <span className={`block h-1 w-6 bg-white transition ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
@@ -39,18 +40,20 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-       <div className="absolute top-16 left-0 w-full backdrop-blur-lg flex flex-col items-center py-4 space-y-4 md:hidden">
+  <div className="fixed top-0 left-0 w-full h-screen backdrop-blur-lg flex flex-col items-center justify-center space-y-6 md:hidden z-40">
+    <a href="https://www.linkedin.com/in/prnshjh/" className="hover:text-blue-400 text-4xl"><FaLinkedin /></a>
+    <a href="https://github.com/prnshjh" className="hover:text-gray-600 text-4xl"><FaGithub /></a>
+    <a href="https://priyanshuwrites.medium.com/" className="hover:text-green-400 text-4xl"><FaMedium /></a>
+    <a href="https://leetcode.com/u/prnshjh/" className="hover:text-yellow-400 text-4xl"><SiLeetcode /></a>
+    <a href="https://www.geeksforgeeks.org/user/prnshjh/" className="hover:text-green-600 text-4xl"><SiGeeksforgeeks /></a>
+    <a href="https://codeforces.com/profile/prnshjh" className="hover:text-blue-500 text-4xl"><SiCodeforces /></a>
+    <a href="https://www.codechef.com/users/prnshjh" className="hover:text-orange-400 text-4xl"><SiCodechef /></a>
+    <a href="https://www.instagram.com/priyanshujha.19/" className="hover:text-pink-500 text-4xl"><FaInstagram /></a>
+  </div>
+)}
 
-          <a href="https://www.linkedin.com/in/prnshjh/" className="hover:text-blue-400"><FaLinkedin /></a>
-          <a href="https://github.com/prnshjh" className="hover:text-gray-600"><FaGithub /></a>
-          <a href="https://priyanshuwrites.medium.com/" className="hover:text-green-400"><FaMedium /></a>
-          <a href="https://leetcode.com/u/prnshjh/" className="hover:text-yellow-400"><SiLeetcode /></a>
-          <a href="https://www.geeksforgeeks.org/user/prnshjh/" className="hover:text-green-600"><SiGeeksforgeeks /></a>
-          <a href="https://codeforces.com/profile/prnshjh" className="hover:text-blue-500"><SiCodeforces /></a>
-          <a href="https://www.codechef.com/users/prnshjh" className="hover:text-orange-400"><SiCodechef /></a>
-          <a href="https://www.instagram.com/priyanshujha.19/" className="hover:text-pink-500"><FaInstagram /></a>
-        </div>
-      )}
+
+
     </nav>
   );
 };
