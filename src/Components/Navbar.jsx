@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Menu (Mobile) */}
-      <div className="md:hidden fixed top-6 right-6 z-50">
+      <div className="md:hidden">
 
         <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
           <div className="space-y-1">
