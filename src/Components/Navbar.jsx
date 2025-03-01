@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/pk-lg2.png";
-import { FaLinkedin, FaGithub, FaMedium, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaMedium, FaInstagram, FaFileAlt } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks, SiCodeforces, SiCodechef } from "react-icons/si";
 
 const Navbar = () => {
@@ -35,14 +35,15 @@ const Navbar = () => {
         <a href="https://codeforces.com/profile/prnshjh" className="hover:text-blue-500"><SiCodeforces /></a>
         <a href="https://www.codechef.com/users/prnshjh" className="hover:text-orange-400"><SiCodechef /></a>
         <a href="https://www.instagram.com/priyanshujha.19/" className="hover:text-pink-500"><FaInstagram /></a>
+        <a href="https://drive.google.com/file/d/1s0EYI07_AfWDgBWKGXPSOWMpKHzUrWOW/view?usp=drivesdk" className=" hover:text-blue-500" target="_blank"><FaFileAlt /> </a>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-screen backdrop-blur-lg flex flex-col items-center justify-center space-y-6 md:hidden z-40">
           {/* Close button inside the menu */}
-         
-          
+
+
           <a href="https://www.linkedin.com/in/prnshjh/" className="hover:text-blue-400 text-4xl"><FaLinkedin /></a>
           <a href="https://github.com/prnshjh" className="hover:text-gray-600 text-4xl"><FaGithub /></a>
           <a href="https://priyanshuwrites.medium.com/" className="hover:text-green-400 text-4xl"><FaMedium /></a>
@@ -51,6 +52,7 @@ const Navbar = () => {
           <a href="https://codeforces.com/profile/prnshjh" className="hover:text-blue-500 text-4xl"><SiCodeforces /></a>
           <a href="https://www.codechef.com/users/prnshjh" className="hover:text-orange-400 text-4xl"><SiCodechef /></a>
           <a href="https://www.instagram.com/priyanshujha.19/" className="hover:text-pink-500 text-4xl"><FaInstagram /></a>
+          <a href="https://drive.google.com/file/d/1s0EYI07_AfWDgBWKGXPSOWMpKHzUrWOW/view?usp=drivesdk" className=" hover:text-blue-500 text-4xl"><FaFileAlt /></a>
         </div>
       )}
     </nav>
