@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `Hey there! 👋 I'm a Full-Stack Developer and Competitive Programmer with a knack for building robust, scalable, and AI-powered web applications. With hands-on experience in Next.js, React, Node.js, and TypeScript, along with databases like MongoDB, PostgreSQL, and MySQL, I specialize in crafting seamless, intelligent digital solutions.
 
@@ -24,6 +24,7 @@ export const PROJECTS = [
   {
     title: "Echo Social",
     image: project1,
+    link:"https://echo-social-phi.vercel.app/",
     description:
       "Echo is a real-time social media platform designed exclusively for college students to connect, share, and engage within their campus community. With features like post creation, likes, comments, real-time chat, and secure authentication, Echo fosters a vibrant and interactive student network.",
     technologies: [" React", "JWT", " Express.js", "Node.js", "MongoDB"],
@@ -31,6 +32,7 @@ export const PROJECTS = [
   {
     title: "Lynk",
     image: project2,
+    link:"https://lynk-gilt.vercel.app/",
     description:
       "A powerful real-time meeting application with secure authentication, scheduling, and interactive controls. Users can start, manage, and customize meetings with features like recording, reactions, and screen sharing. The app ensures a seamless experience with responsive design and personal meeting rooms for quick collaboration",
     technologies: ["Next.js", "TypeScript", "Tailwind", "ShadCN", "Clerk"],
@@ -39,6 +41,7 @@ export const PROJECTS = [
   {
     title: "Sakhi Finance",
     image: project4,
+    link:"https://sakhi-finance.vercel.app/",
     description:
       "An intelligent fintech platform designed to simplify financial management through AI-powered analytics, smart budgeting, and secure banking. With features like real-time insights, a smart receipt scanner, and multi-currency support, it empowers users to make informed financial decisions. The platform also offers financial education, NGO support, and micro-investment opportunities to promote financial literacy and growth.",
     technologies: ["React", "Next.js ", "TypeScript", "Tailwind CSS", "PostgreSQL", "Gemeni-AI"],
@@ -46,6 +49,7 @@ export const PROJECTS = [
   {
     title: "Portfolio Website",
     image: project3,
+    link:"https://priyanshu-kumar-mocha.vercel.app/",
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["React", "Tailwind", "Framer-Motion"],

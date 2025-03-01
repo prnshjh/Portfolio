@@ -19,7 +19,7 @@ const Technical = () => {
             <SiMongodb className='text-7xl text-green-600'/>
         </div>
         <div className='rounded-2xl border-4 border-neutral-800 p-4'>
-            <FaNodeJs className='text-7xl text-green-400'/>
+            <FaNodeJs className='text-7xl text-green-300'/>
         </div>
      </div>
     </div>

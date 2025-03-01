@@ -6,6 +6,7 @@ import Technical from './Components/Technical'
 import Education from './Components/Education'
 import Project from './Components/Project'
 import Contact from './Components/Contact'
+import Contributions from './Components/Contributions'
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
       <About/>
      <Technical/>
      <Education/>
+     <Contributions/>
      <Project/>
      <Contact/>
     

@@ -27,14 +27,14 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-4 text-2xl">
-        <a href="https://www.linkedin.com/in/prnshjh/" className="hover:text-blue-400"><FaLinkedin /></a>
-        <a href="https://github.com/prnshjh" className="hover:text-gray-400"><FaGithub /></a>
-        <a href="https://priyanshuwrites.medium.com/" className="hover:text-green-400"><FaMedium /></a>
-        <a href="https://leetcode.com/u/prnshjh/" className="hover:text-yellow-400"><SiLeetcode /></a>
-        <a href="https://www.geeksforgeeks.org/user/prnshjh/" className="hover:text-green-600"><SiGeeksforgeeks /></a>
-        <a href="https://codeforces.com/profile/prnshjh" className="hover:text-blue-500"><SiCodeforces /></a>
-        <a href="https://www.codechef.com/users/prnshjh" className="hover:text-orange-400"><SiCodechef /></a>
-        <a href="https://www.instagram.com/priyanshujha.19/" className="hover:text-pink-500"><FaInstagram /></a>
+        <a href="https://www.linkedin.com/in/prnshjh/" className="hover:text-blue-400" target='blank'><FaLinkedin /></a>
+        <a href="https://github.com/prnshjh" className="hover:text-gray-400" target='blank'><FaGithub /></a>
+        <a href="https://priyanshuwrites.medium.com/" className="hover:text-green-400" target='blank'><FaMedium /></a>
+        <a href="https://leetcode.com/u/prnshjh/" className="hover:text-yellow-400" target='blank'><SiLeetcode /></a>
+        <a href="https://www.geeksforgeeks.org/user/prnshjh/" className="hover:text-green-600" target='blank'><SiGeeksforgeeks /></a>
+        <a href="https://codeforces.com/profile/prnshjh" className="hover:text-blue-500" target='blank'><SiCodeforces /></a>
+        <a href="https://www.codechef.com/users/prnshjh" className="hover:text-orange-400" target='blank'><SiCodechef /></a>
+        <a href="https://www.instagram.com/priyanshujha.19/" className="hover:text-pink-500" target='blank'><FaInstagram /></a>
         <a href="https://drive.google.com/file/d/1s0EYI07_AfWDgBWKGXPSOWMpKHzUrWOW/view?usp=drivesdk" className=" hover:text-blue-500" target="_blank"><FaFileAlt /> </a>
       </div>
 
