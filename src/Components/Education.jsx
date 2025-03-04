@@ -1,20 +1,21 @@
 import React from 'react'
 import { EXPERIENCES } from '../constants'
 import vitLogo from '../assets/vit-logo.png'
+import {motion} from "framer-motion"
 
 const Education = () => {
   return (
     <div className='border-b border-neutral-900 pb-4'>
-      <h2 className='my-20 text-center text-4xl'>Education</h2>
+      <motion.h2 whileInView={{opacity:1, y:0}} initial={{opacity:0, y:-100}} transition={{duration:0.5}} viewport={{ once: true }}  className='my-20 text-center text-4xl'>Education</motion.h2>
       <div>{EXPERIENCES.map((experience, index) => (
         <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
-          <div className="w-full lg:w-1/4 flex flex-col items-center text-center">
+          <motion.div whileInView={{opacity:1, x:0}} initial={{opacity:0, x:-100}} transition={{duration:1}} viewport={{ once: true }}  className="w-full lg:w-1/4 flex flex-col items-center text-center">
             
             <img src={vitLogo} alt="vit" className="h-40 mb-5 brightness-0 invert" />
             <p className="mb-2 text-sm text-neutral-300">{experience.year}</p>
-          </div>
+          </motion.div>
 
-          <div className='w-full max-w-xl lg:w-3/4'>
+          <motion.div whileInView={{opacity:1, x:0}} initial={{opacity:0, x:100}} transition={{duration:1}}  viewport={{ once: true }} className='w-full max-w-xl lg:w-3/4'>
             <h6 className='mb-2 font-semibold  text-purple-100' >{experience.role} - <span className='mb-2 font-semibold text-purple-400'>{experience.company}</span>
 
             </h6>
@@ -22,7 +23,7 @@ const Education = () => {
             {experience.technologies.map((tech, index) => (
               <span key={index} className='mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-500 '>{tech}</span>
             ))}
-          </div>
+          </motion.div>
         </div>
       ))}
       </div>
