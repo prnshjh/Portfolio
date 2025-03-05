@@ -6,7 +6,7 @@ import project4 from "../assets/projects/project-4.png";
 export const HERO_CONTENT = `Hey there! 👋 I'm a Full-Stack Developer and Competitive Programmer with a knack for building robust, scalable, and AI-powered web applications. With hands-on experience in Next.js, React, Node.js, and TypeScript, along with databases like MongoDB, PostgreSQL, and MySQL, I specialize in crafting seamless, intelligent digital solutions.
 
 I thrive on leveraging AI and modern technologies to create innovative products that enhance user experiences and drive impact. Constantly exploring new advancements, I aim to build efficient, high-performance applications that solve real-world problems.`
-export const ABOUT_TEXT = `I'm a Computer Science student at VIT, with a strong passion for Web App Development, AI integration, and Competitive Programming. Proficient in React, Next.js, Node.js, TypeScript, and databases like MySQL, PostgreSQL, and MongoDB, I specialize in developing scalable, AI-powered, and real-time web applications that enhance user experiences and deliver meaningful impact. Beyond development, I have a strong foundation in DevOps, backend architecture, and cloud deployment. I work with Docker, Kubernetes, CI/CD pipelines, and cloud platforms like AWS, Vercel to ensure seamless scalability, security, and high availability of applications.
+export const ABOUT_TEXT = `I'm a Computer Science student at VIT, with a strong passion for Web App Development, AI integration, and Competitive Programming. Proficient in React, Next.js, Node.js, TypeScript, and databases like MySQL, PostgreSQL, and MongoDB, I specialize in developing scalable, AI-powered, and real-time web applications that enhance user experiences and deliver meaningful impact. Beyond development, I am currently enhancing my skills in DevOps, backend architecture, cloud deployment to ensure seamless scalability, security, and high availability of applications.
 
 My tech journey began with a deep curiosity for problem-solving, which has grown into a career focused on continuous learning, innovation, and pushing boundaries. I am committed to building high-quality, impactful digital products.`;
 
@@ -16,7 +16,7 @@ export const EXPERIENCES = [
     role: "Btech in Computer Science & Engineering",
     company: "Vellore Institute of Technology",
     description: `I am currently pursuing my B.Tech at VIT, where I am developing a strong foundation in Object-Oriented Programming, Data Structures, Algorithms, Operating Systems, Computer Networks, Cloud Computing, Database Management Systems, and Machine Learning. Throughout my academic journey, I have engaged in hands-on projects, collaborated with peers on innovative solutions, and actively participated in technical events and hackathons, sharpening my problem-solving and analytical abilities.`,
-    technologies: ["CGPA : 8.34 (4th Semester)"],
+    technologies: ["CGPA : 8.3 (4th Semester)"],
   }
 ];
 
